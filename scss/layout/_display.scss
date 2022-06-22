@@ -1197,7 +1197,7 @@ main {
         margin-top: 2rem;
         min-height: 75vh;
         //scroll-snap-align: end;
-        //border: 1px solid red;
+        border: 1px solid red;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1207,6 +1207,13 @@ main {
         max-width: 100%;
         min-width: 70%;
         position: relative;
+
+        @include u.breakpoints-down(small) {
+            min-width: u.rem(400);
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            //border: 1px solid green;
+        }
 
 
         @include u.breakpoints-down(smaller) {
@@ -1241,7 +1248,8 @@ main {
             }
 
             @include u.breakpoints-down(smaller) {
-                width: u.rem(280);
+                min-width: u.rem(280);
+                border: 1px solid blue;
             }
 
 
