@@ -1038,11 +1038,12 @@ main {
             span {
                 background: var(--color-yellow);
                 color: var(--color-bg);
-                padding: 0 8px 0 8px;
+                padding: 0 7px 0 7px;
                 margin: 0 2px 0 2px;
                 border-radius: 6px;
                 display: inline-block;
                 font-weight: 400;
+                text-align: center;
                 //border: 1px solid var(--color-blue);
                 //transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
                 transition: all 0.50s ease-in-out;
@@ -1197,7 +1198,7 @@ main {
         margin-top: 2rem;
         min-height: 75vh;
         //scroll-snap-align: end;
-        border: 1px solid red;
+        //border: 1px solid red;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1218,7 +1219,9 @@ main {
 
         @include u.breakpoints-down(smaller) {
             min-width: 80vw;
-            border: 1px solid green;
+            //border: 1px solid green;
+            padding-left: 2rem;
+            padding-right: 2rem;
         }
 
 
@@ -1244,12 +1247,12 @@ main {
 
             @include u.breakpoints-down(small) {
                 width: u.rem(600);
-                border: 1px solid green;
+                //border: 1px solid green;
             }
 
             @include u.breakpoints-down(smaller) {
                 min-width: u.rem(280);
-                border: 1px solid blue;
+                //border: 1px solid blue;
             }
 
 
@@ -1402,6 +1405,11 @@ main {
                     margin-inline-start: 0px;
                     margin-inline-end: 1rem;
                     text-align: left;*/
+                    //border: 1px solid red;
+
+                    @include u.breakpoints-down(smaller) {
+                        font-size: u.rem(15);
+                    }
                 }
 
                 ul {
@@ -1417,6 +1425,10 @@ main {
                     li {
 
                         margin-bottom: u.rem(10);
+
+                        @include u.breakpoints-down(smaller) {
+                            font-size: u.rem(15);
+                        }
 
                     }
                 }
@@ -1561,7 +1573,7 @@ main {
 
 
             .send-message-header {
-                width: 60%;
+                width: 90%;
                 height: 8rem;
                 margin: auto;
                 display: flex;
@@ -1570,7 +1582,7 @@ main {
                 text-align: center;
                 align-items: center;
                 margin-top: 1rem;
-                //border: 1px solid red;
+                border: 1px solid red;
 
                 h2 {
                     color: var(--color-text);
@@ -1580,6 +1592,7 @@ main {
                     line-height: 40px;
                     //margin-top: 1rem;
                     margin-bottom: 0.5rem;
+                    border: 1px solid red;
 
                     //margin-left: 10rem;
                     //text-align: center;
@@ -1590,12 +1603,12 @@ main {
                     }
 
                     @include u.breakpoints-down(small) {
-                        font-size: u.rem(22);
+                        //font-size: u.rem(22);
                         //transform: translateX(32%);
                     }
 
                     @include u.breakpoints-down(smaller) {
-                        font-size: u.rem(19);
+                        //font-size: u.rem(19);
                         //transform: translateX(32%);
                     }
 
@@ -1632,7 +1645,7 @@ main {
                     }
 
                     @include u.breakpoints-down(smaller) {
-                        font-size: u.rem(13);
+                        //font-size: u.rem(13);
                         text-align: justify;
                         display: inline;
                     }
