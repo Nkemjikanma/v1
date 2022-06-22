@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
     <script src="/js/app.js"></script>
-    <title>Nkemjika</title>
+    <title>Nkemjikanma</title>
 </head>
 
 <body>
@@ -325,7 +325,8 @@
             Email.send({
                 SecureToken: "f502d920-029c-43bc-97cb-83023c75126e",
                 To: 'nkemjikaohanyere@gmail.com',
-                From: document.getElementById("email").value,
+                //From: document.getElementById("email").value,
+                From: 'nkemjikaohanyere@gmail.com',
                 Subject: "New Contact Form",
                 Body: "Name: " + document.getElementById("full-name").value
                     + "<br> Email: " + document.getElementById("email").value
