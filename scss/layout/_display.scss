@@ -1525,27 +1525,6 @@ main {
                 max-width: 100%;
                 min-width: 70%;
 
-                /*.about-me {
-                    //border: 1px solid red;
-
-                    .about-desc {
-                        //border: 1px solid red;
-                        //transform: translateX(0);
-
-                        .about-desc-title {
-                            //transform: none;
-                            font-size: u.rem(24);
-                        }
-
-                        .about-desc-title::after {
-                            width: 200px
-                        }
-
-                        .about-desc-title::before {
-                            width: 200px
-                        }
-                    }
-                }*/
 
 
             }
@@ -1561,6 +1540,7 @@ main {
             margin: 0 auto;
             align-items: center;
             flex-direction: column;
+            //gap: 0.5rem;
             //position: relative;
             margin-top: 1rem;
             //posi
@@ -1574,7 +1554,7 @@ main {
 
             .send-message-header {
                 width: 90%;
-                height: 8rem;
+                height: 6rem;
                 margin: auto;
                 display: flex;
                 margin: auto;
@@ -1582,7 +1562,7 @@ main {
                 text-align: center;
                 align-items: center;
                 margin-top: 1rem;
-                border: 1px solid red;
+                //border: 1px solid red;
 
                 h2 {
                     color: var(--color-text);
@@ -1592,7 +1572,7 @@ main {
                     line-height: 40px;
                     //margin-top: 1rem;
                     margin-bottom: 0.5rem;
-                    border: 1px solid red;
+                    //border: 1px solid red;
 
                     //margin-left: 10rem;
                     //text-align: center;
@@ -1668,9 +1648,9 @@ main {
             form {
                 position: relative;
                 //border: 1px solid red;
-                min-height: 20rem;
+                min-height: 26rem;
                 font-size: u.rem(18);
-                width: 80%;
+                width: 90%;
                 //justify-content: center;
                 //align-content: center;
                 //margin: 0 auto;
@@ -1693,10 +1673,13 @@ main {
                     gap: 2rem;
                     //border: 1px solid red;
                     height: 6rem;
+                    //margin: 2rem;
                     //justify-content: center;
 
                     @include u.breakpoints-down(small) {
                         height: 10rem;
+                        //margin-bottom: 2rem;
+
                     }
                 }
 
@@ -1709,8 +1692,8 @@ main {
                     @include u.breakpoints-down(small) {
                         display: flex;
                         flex-direction: column;
-                        margin-top: 2rem;
-                        height: 8rem;
+                        //margin-top: 2rem;
+                        height: 10rem;
 
                     }
 
@@ -1725,6 +1708,8 @@ main {
                         //z-index: 2;
                         @include u.breakpoints-down(small) {
                             height: 10rem;
+                            //border: 1px solid green;
+                            //margin-bottom: 2rem;
                         }
 
                         input {
@@ -1777,7 +1762,7 @@ main {
                             transition: all 0.3s ease;
 
                             @include u.breakpoints-down(small) {
-                                top: 20px;
+                                top: 35px;
 
                             }
                         }
@@ -1791,7 +1776,7 @@ main {
 
                         input:focus+.label-name .content-name,
                         input:valid+.label-name .content-name {
-                            transform: translateY(-200%);
+                            transform: translateY(-150%);
                             color: var(--color-pink);
                         }
 
@@ -1807,7 +1792,7 @@ main {
 
                     .email-input {
                         input[type="email"]:focus+.label-name .content-name {
-                            transform: translateY(-200%);
+                            transform: translateY(-150%);
                             //border: 3px solid red;
                         }
 
@@ -1836,6 +1821,7 @@ main {
                             outline: none !important;
                             border: none;
                             color: var(--color-yellow);
+                            //color: -webkit- 
                             font-size: u.rem(16);
                         }
 
