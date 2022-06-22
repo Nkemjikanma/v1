@@ -1,0 +1,32 @@
+@use 'sass:color';
+@use 'sass:math';
+
+@use '../globals/' as g;
+
+:root {
+
+    @each $name,
+    $value in g.$colors {
+        --color-#{$name}: #{$value};
+    }
+}
+
+@function rem($pixel) {
+    @if math.is-unitless($pixel) {
+        @return math.div($pixel, 16)+rem
+    }
+
+    @else {
+        @error 'Remove unit from rem function'
+    }
+}
+
+@function em($pixel) {
+    @if math.is-unitless($pixel) {
+        @return math.div($pixel, 16)+rem;
+    }
+
+    @else {
+        @error "something wrong with your unit";
+    }
+}
