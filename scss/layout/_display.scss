@@ -1256,7 +1256,7 @@ main {
             }
 
             @include u.breakpoints-down(smaller) {
-                min-width: u.rem(280);
+                min-width: u.rem(320);
                 //border: 1px solid blue;
             }
 
@@ -1272,15 +1272,17 @@ main {
                 }
 
                 @include u.breakpoints-down(avg) {
-                    width: 85%;
+                    width: 100%;
                 }
 
                 @include u.breakpoints-down(small) {
-                    width: 100%;
+                    min-width: 100%;
+                    //border: 1px solid red;
                 }
 
                 @include u.breakpoints-down(smaller) {
                     width: 100%;
+
                 }
 
                 //flex-shrink: 1;
