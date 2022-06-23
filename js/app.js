@@ -112,11 +112,11 @@ window.addEventListener("DOMContentLoaded", () => {
 
     let header = document.getElementById("site-header")
 
-    if (!header) {
+    /*if (!header) {
         console.log('no id found')
     } else {
         console.log('yes id found')
-    }
+    }*/
 
     let checkScroll = function () {
         //* find current scroll postion of user using scrollY or scrollTop
