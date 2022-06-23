@@ -1268,7 +1268,9 @@ main {
                 max-width: 60%;
 
                 @include u.breakpoints-down(large) {
-                    min-width: 70%;
+                    min-width: 50%;
+                    //border: 1px solid green;
+
                 }
 
                 @include u.breakpoints-down(avg) {
