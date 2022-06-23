@@ -255,13 +255,15 @@ wrapper {
                 background: var(--color-bg);
                 width: 200px;
                 height: 300px;
-                border-radius: 0s;
-                background: rgba(3, 7, 30, 0.9);
+                //border-radius: 0s;
+                background: var(--color-bg);
                 //background-color: transparent;
                 backdrop-filter: -webkit-blur(3px);
                 backdrop-filter: -moz-blur(3px);
                 backdrop-filter: blur(3px);
-                transition: right 0.3s ease-in;
+                transition: all 0.3s ease-in;
+                //border-left: 1px solid var(--color-ox);
+                //border-bottom: 1px solid var(--color-ox);
                 //overflow: hidden;
 
                 //z-index: 11;
@@ -286,7 +288,8 @@ wrapper {
                         height: 2rem;
                         //width: 5rem;
                         width: 100%;
-                        //background: rgba(3, 7, 30, 0.1);
+                        //background: rgb(2, 4, 17);
+                        background: rgba(3, 7, 30, 0.1);
                         text-align: center;
                         transform-origin: bottom left;
                         //border: 1px solid var(--color-green);
@@ -366,8 +369,9 @@ wrapper {
 
             .side-nav-bar {
                 display: block;
-                right: 0;
+                right: -3rem;
                 animation: side-nav 0.5s ease-in duration timing-function delay iteration-count direction fill-mode;
+                transition: all 0.5 ease-in;
             }
         }
 
@@ -380,12 +384,12 @@ wrapper {
     @keyframes navDown {
         from {
             opacity: 0;
-            transform: translateY(-4em);
+            transform: translateX(4em);
         }
 
         to {
             opacity: 1;
-            transform: translateY(0);
+            transform: translateX(0);
 
         }
     }
@@ -1199,7 +1203,8 @@ main {
         min-height: 75vh;
         //scroll-snap-align: end;
         //border: 1px solid red;
-        display: flex;
+        //display: flex;
+        display: none;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -1259,8 +1264,8 @@ main {
 
             .about-desc {
                 position: relative;
-                //border: 1px solid red;
-                width: 70%;
+                //border: 1px solid blue;
+                max-width: 60%;
 
                 @include u.breakpoints-down(large) {
                     min-width: 70%;

@@ -13,8 +13,10 @@ window.addEventListener("DOMContentLoaded", () => {
     const textHi_blinker = document.querySelector('#text-hi')
     const leftLinks = document.querySelector('.div-orientation-left')
     const hamburger = document.querySelector('.hamburger');
+    const nextpage =  document.querySelector('.next-page');
     //const classes = hamburger.classList;
-    console.log(hamburger.classList)
+    //console.log(hamburger.classList)
+
 
     /*for (let i = 0; i < hamburger.children.length; i++) {
         console.log(hamburger[i]);
@@ -42,7 +44,7 @@ window.addEventListener("DOMContentLoaded", () => {
     //}
 
 
-
+    
     //textHi.style.opacity = 0;
     function textHiFunction() {
         const textHi = document.querySelector('.text-hi-div')
@@ -62,6 +64,7 @@ window.addEventListener("DOMContentLoaded", () => {
             links.style.display = 'flex';
             document.querySelector("html").style.overflowY = "scroll";
             leftLinks.style.bottom = 0;
+            nextpage.style.display = "flex";
 
         })
 
