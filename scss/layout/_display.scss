@@ -1393,7 +1393,7 @@ main {
                     color: var(--color-text3);
                     position: relative;
                     font-weight: 200;
-                    font-size: u.rem(16);
+                    font-size: u.rem(18);
                     text-align: justify;
                     margin-block-start: 1em;
                     margin-block-end: 1em;
@@ -1418,23 +1418,28 @@ main {
                 }
 
                 ul {
-                    list-style-type: "→ ";
+                    //list-style-type: "→ ";
                     list-style-position: outside;
 
                     color: var(--color-text3);
                     display: grid;
                     grid-template-columns: repeat(2, 1fr);
-                    margin-left: 1rem;
+                    margin-left: 2rem;
                     font-weight: 200;
 
                     li {
-
                         margin-bottom: u.rem(10);
+                        position: relative;
 
                         @include u.breakpoints-down(smaller) {
                             font-size: u.rem(15);
                         }
 
+                        .material-icons-round {
+                            position: absolute;
+                            left: u.rem(-30);
+                            color: var(--color-text2)
+                        }
                     }
                 }
 
