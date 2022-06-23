@@ -8,8 +8,9 @@
     min-height: 100vh;
     min-width: 100vh;
     //background: var(--color-bg);
-    background: var(--color-bg2);
+    background: var(--color-bg);
     overflow: hidden;
+    z-index: 20;
     //border: 1px solid red;
 
     .animation-loader {
@@ -46,7 +47,7 @@
 
         span:nth-child(1) {
             //width: 
-            background: var(--color-brown);
+            background: var(--color-green);
             grid-column: span 2;
             //display: none;
             animation-name: slider1;
